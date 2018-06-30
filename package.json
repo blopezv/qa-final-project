@@ -1,0 +1,28 @@
+{
+  "name": "qa-final-project",
+  "version": "1.0.0",
+  "description": "Final project of the module automation of tests - Master of software engineering\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[3~\u001b[3~\u001b[3~\u001b[E\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blopezv/qa-final-project.git"
+  },
+  "keywords": [
+    "bdd"
+  ],
+  "author": "Brenda Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blopezv/qa-final-project/issues"
+  },
+  "homepage": "https://github.com/blopezv/qa-final-project#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}

@@ -2,22 +2,33 @@ const { Given, When, Then } = require('cucumber')
 const { expect } = require('chai')
 const request = require('request-promise')
 
-Given('Datos del Carrier con id {int}', function (int) {
-    // Write code here that turns the phrase above into concrete actions
-    expect(true).to.eq(true);
+let carrierId;
+let resultResponse;
+Given('Datos del Carrier con id {int}', function (id) {
+    carrierId = id;
 });
 
-When('Envio estos datos con POST a ReconLogistics', function () {
-    // Write code here that turns the phrase above into concrete actions
-    expect(true).to.eq(true);
+When('Envio estos datos con DELETE a ReconLogistics', async function () {
+    let options = {
+        method: 'Delete',
+        uri: 'http://localhost:54734/api/carriers/' + carrierId,
+        json: true,
+        resolveWithFullResponse: true
+    };
+
+    await request(options)
+        .then(function (response) {
+            resultResponse = response;
+        })
+        .catch(function (error) {
+            resultResponse = error;
+        });
 });
 
-Then('El servidor responde con estado {int}', function (int) {
-    // Write code here that turns the phrase above into concrete actions
-    expect(true).to.eq(true);
+Then('El servidor responde con estado {int}', function (code) {
+    expect(resultResponse.statusCode).to.eql(code);
 });
 
-Then('La respuesta contiene el Description {string}', function (string) {
-    // Write code here that turns the phrase above into concrete actions
-    expect(true).to.eq(true);
+Then('La respuesta contiene la Description {string}', function (description) {
+    expect(resultResponse.value.ErrorMessagesFromService[0].Description).to.eql(description);
 });

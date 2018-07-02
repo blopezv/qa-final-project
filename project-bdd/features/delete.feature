@@ -19,5 +19,4 @@ Feature: Eliminar un carrier
     | id        | code | description                     |
     | 8019      | 200  | "Carrier removed"               |
     | 9         | 200  | "Carrier not removed"           |
-    | 0         | 400  |                                 |
     | 100000087 | 200  | "Carrier not found"             |

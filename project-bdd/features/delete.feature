@@ -19,6 +19,5 @@ Feature: Eliminar un carrier
     | id        | code | description                    |
     | 8019      | 200  | Carrier removed                |
     | 9         | 200  | Carrier not removed            |
-    | 0         | 200  | Carrier identifier is invalid  |
-    | 8020      | 200  | Carrier removed                |
-    | 1000087   | 200  | Carrier not found              |
+    | 0         | 400  | Carrier identifier is invalid  |
+    | 100000087 | 200  | Carrier not found              |

@@ -30,5 +30,5 @@ Then('El servidor responde con estado {int}', function (code) {
 });
 
 Then('La respuesta contiene la Description {string}', function (description) {
-    expect(resultResponse.value.ErrorMessagesFromService[0].Description).to.eql(description);
+    expect(resultResponse.body.value.ErrorMessagesFromService[0].Description).to.eql(description);
 });

@@ -10,7 +10,7 @@ Feature: Eliminar un carrier
         And La respuesta contiene la Description "Carrier removed"
     
     Scenario Outline: Eliminar un carrier
-    Given Datos del Carrier con <id>
+    Given Datos del Carrier con id <id>
     When Envio estos datos con DELETE a ReconLogistics
     Then  El servidor responde con estado <code>
      And La respuesta contiene la Description <description>
